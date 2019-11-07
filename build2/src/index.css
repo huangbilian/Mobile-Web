@@ -1,0 +1,13 @@
+@import '~antd/dist/antd.css';
+#root{
+    /*width:100px;
+    height:100px;
+    background-color: darkcyan;*/
+}
+ul,li{
+    list-style-type: none;
+}
+input{
+    outline: none;
+    border:'1px solid #ccc' ;
+}
