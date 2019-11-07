@@ -6,7 +6,7 @@ import Api from './container/Api';
 import Start from './container/Start';
 import About from './container/About';
 import Login from './container/Login';
-import Page from './container/home/Page';
+import Article from './container/home/Article';
 
 export default class App extends Component {
     render() {
@@ -21,7 +21,7 @@ export default class App extends Component {
                             <Route path='/start' component={Start} />
                             <Route path='/about' component={About} />
                             <Route path='/login' component={Login} />
-                            <Route path='/topic/:page' component={Page}></Route>
+                            <Route path='/topic/:page' component={Article}></Route>
                         </div>
                         <div className="sider">
                             <p style={{marginTop:'15px',color:'black'}}>&nbsp;&nbsp;CNode：Node.js专业中文社区</p>

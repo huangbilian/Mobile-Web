@@ -30,7 +30,8 @@ export default class All extends Component {
     }
     render() {
         var arr=[1,2,3,4,5,6,7,8,9,10];
-        var last=this.props.location.search.split("&")[0];
+        //var last=this.props.location.search.split("&")[0];
+        var list=this.props.location.search.split("&")[0] ? this.props.location.search.split("&")[0] : '?tab=all';
         return (
             <div>
                 {
@@ -61,7 +62,7 @@ export default class All extends Component {
                 </div> */}
                 {
                     arr.map((item)=>(
-                        <li className="pagination"><Link to={`${last}&page=${item}`}>{item}</Link></li>)
+                        <li className="pagination"><Link to={`${list}&page=${item}`}>{item}</Link></li>)
                     )
                 }
             </div>
